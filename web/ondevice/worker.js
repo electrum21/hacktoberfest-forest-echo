@@ -3,6 +3,22 @@
  */
 importScripts('/vendor/litert/litert.iife.js', '/ondevice/dsp.js', '/ondevice/engine.js');
 
+// The WebAssembly runtime looks for its .wasm file next to the script that started this worker (/ondevice/),
+// but the binaries live in /vendor/litert/. Point those requests at the right place.
+const WASM_DIR = '/vendor/litert/';
+const nativeFetch = self.fetch.bind(self);
+self.fetch = (input, init) => {
+  const raw = typeof input === 'string' ? input : (input && input.url) || String(input);
+  try {
+    const url = new URL(raw, self.location.href);
+    const name = url.pathname.split('/').pop();
+    if (url.origin === self.location.origin && /^litert_wasm.*\.wasm$/.test(name) && !url.pathname.startsWith(WASM_DIR)) {
+      return nativeFetch(WASM_DIR + name, init);
+    }
+  } catch (_) { /* not a URL we understand: fall through */ }
+  return nativeFetch(input, init);
+};
+
 const MODEL = {
   acoustic: '/models/BirdNET_GLOBAL_6K_V2.4_Model_FP32.tflite',
   geo: '/models/BirdNET_GLOBAL_6K_V2.4_MData_Model_V2_FP16.tflite',

@@ -6,7 +6,7 @@
  *
  * Bump CACHE whenever you change a shell file, so phones pick up the new version.
  */
-const CACHE = 'forest-echo-shell-v2';
+const CACHE = 'forest-echo-shell-v4';
 // The offline pack (BirdNET models + WebAssembly runtime) lives in its own cache, filled only when the
 // user taps "Download offline pack", and it is NOT cleared when the shell version changes.
 const MODELS_CACHE = 'forest-echo-models-v1';

@@ -472,7 +472,7 @@ function cue(freq) {
   } catch (_) { /* cue is best-effort */ }
 }
 
-// Experimental: headphone play/pause starts a fixed capture, so the phone can stay in a pocket.
+// Headphone play/pause starts a fixed capture, so the phone can stay in a pocket.
 function onMediaButton() {
   keepalive.play().catch(() => {});
   navigator.mediaSession.playbackState = 'playing';

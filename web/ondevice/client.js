@@ -74,7 +74,7 @@
     if (!supported()) throw new Error('This browser cannot run on-device mode.');
     const mres = await fetch('/models/manifest.json', { cache: 'no-store' });
     if (!mres.ok || !(mres.headers.get('content-type') || '').includes('json')) {
-      throw new Error('This server has no on-device models yet. See docs/ON_DEVICE.md.');
+      throw new Error('This server has no on-device models yet.');
     }
     const manifest = await mres.json();
     const { relaxedSimd } = await call('probe');

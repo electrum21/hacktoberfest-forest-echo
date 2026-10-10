@@ -11,7 +11,10 @@ When something catches your attention, hold one button for a few seconds. Forest
 ## Try it
 
 - **Live demo:** [forest-echo.onrender.com](https://forest-echo.onrender.com/). The hosted server runs in explicit demo mode (results are labelled `demo`), and the free plan can take up to a minute to wake on the first visit. On-device mode runs the real BirdNET model in your browser from this URL.
-- **Demo video:** [demo.mp4](https://github.com/electrum21/hacktoberfest-forest-echo/blob/main/demo.mp4)
+- **Demo video:**
+
+
+https://github.com/user-attachments/assets/c59e43e7-4bc1-47ec-87f0-7e16588f4304
 
 To test identification, play a clear recording of one bird close to the phone and hold the button for 4–5 seconds. If **Use my location** is on, only birds plausible where you are this week are accepted, so a bird from another continent is ignored. Turn location off to identify any bird in BirdNET's list of about 6,000 species.
 

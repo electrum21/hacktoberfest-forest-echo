@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: forest-echo
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      # Fetches the BirdNET models at build time so on-device mode works from this URL. Set to false to skip (about 67 MB).
+      - key: FETCH_MODELS
+        value: "true"
+      - key: CLASSIFIER
+        value: demo
+      - key: ELEVENLABS_API_KEY
+        sync: false
+      - key: ELEVENLABS_VOICE_ID
+        value: JBFqnCBsd6RMkjVDRZzb
+      - key: ELEVENLABS_MODEL_ID
+        value: eleven_flash_v2_5
+      - key: MASTRA_URL
+        value: http://localhost:4112

@@ -1,0 +1,182 @@
+{
+ "windows": [
+  {
+   "start_s": 0,
+   "idx": 4771,
+   "label": "Poecile atricapillus_Black-capped Chickadee",
+   "p": 0.81406
+  },
+  {
+   "start_s": 3,
+   "idx": 4771,
+   "label": "Poecile atricapillus_Black-capped Chickadee",
+   "p": 0.30828
+  },
+  {
+   "start_s": 6,
+   "idx": 636,
+   "label": "Baeolophus bicolor_Tufted Titmouse",
+   "p": 0.18643
+  },
+  {
+   "start_s": 9,
+   "idx": 2648,
+   "label": "Haemorhous mexicanus_House Finch",
+   "p": 0.63938
+  },
+  {
+   "start_s": 12,
+   "idx": 2648,
+   "label": "Haemorhous mexicanus_House Finch",
+   "p": 0.08079
+  },
+  {
+   "start_s": 15,
+   "idx": 1748,
+   "label": "Cyanocitta cristata_Blue Jay",
+   "p": 0.06615
+  },
+  {
+   "start_s": 18,
+   "idx": 1748,
+   "label": "Cyanocitta cristata_Blue Jay",
+   "p": 0.43527
+  },
+  {
+   "start_s": 21,
+   "idx": 1748,
+   "label": "Cyanocitta cristata_Blue Jay",
+   "p": 0.32909
+  },
+  {
+   "start_s": 24,
+   "idx": 1748,
+   "label": "Cyanocitta cristata_Blue Jay",
+   "p": 0.17492
+  },
+  {
+   "start_s": 27,
+   "idx": 2289,
+   "label": "Falco columbarius_Merlin",
+   "p": 0.26565
+  }
+ ],
+ "geo": {
+  "singapore": {
+   "lat": 1.35,
+   "lon": 103.82,
+   "week": 37,
+   "top": [
+    {
+     "idx": 5141,
+     "label": "Pycnonotus goiavier_Yellow-vented Bulbul",
+     "p": 1.0
+    },
+    {
+     "idx": 5746,
+     "label": "Streptopelia chinensis_Spotted Dove",
+     "p": 0.9996
+    },
+    {
+     "idx": 2804,
+     "label": "Hirundo tahitica_Pacific Swallow",
+     "p": 0.9996
+    },
+    {
+     "idx": 2471,
+     "label": "Geopelia striata_Zebra Dove",
+     "p": 0.9993
+    },
+    {
+     "idx": 4252,
+     "label": "Passer montanus_Eurasian Tree Sparrow",
+     "p": 0.9989
+    },
+    {
+     "idx": 1550,
+     "label": "Copsychus saularis_Oriental Magpie-Robin",
+     "p": 0.9959
+    },
+    {
+     "idx": 2662,
+     "label": "Halcyon smyrnensis_White-throated Kingfisher",
+     "p": 0.9955
+    },
+    {
+     "idx": 49,
+     "label": "Acridotheres tristis_Common Myna",
+     "p": 0.9951
+    },
+    {
+     "idx": 48,
+     "label": "Acridotheres javanicus_Javan Myna",
+     "p": 0.9931
+    },
+    {
+     "idx": 6135,
+     "label": "Treron vernans_Pink-necked Green-Pigeon",
+     "p": 0.9829
+    }
+   ],
+   "n_ge_010": 469
+  },
+  "london": {
+   "lat": 51.51,
+   "lon": -0.12,
+   "week": 37,
+   "top": [
+    {
+     "idx": 1491,
+     "label": "Columba palumbus_Common Wood-Pigeon",
+     "p": 0.9867
+    },
+    {
+     "idx": 2176,
+     "label": "Erithacus rubecula_European Robin",
+     "p": 0.9825
+    },
+    {
+     "idx": 1579,
+     "label": "Corvus corone_Carrion Crow",
+     "p": 0.9625
+    },
+    {
+     "idx": 1592,
+     "label": "Corvus monedula_Eurasian Jackdaw",
+     "p": 0.9206
+    },
+    {
+     "idx": 1745,
+     "label": "Cyanistes caeruleus_Eurasian Blue Tit",
+     "p": 0.9111
+    },
+    {
+     "idx": 4603,
+     "label": "Pica pica_Eurasian Magpie",
+     "p": 0.9044
+    },
+    {
+     "idx": 1276,
+     "label": "Chroicocephalus ridibundus_Black-headed Gull",
+     "p": 0.9028
+    },
+    {
+     "idx": 3089,
+     "label": "Larus argentatus_Herring Gull",
+     "p": 0.8839
+    },
+    {
+     "idx": 5783,
+     "label": "Sturnus vulgaris_European Starling",
+     "p": 0.8742
+    },
+    {
+     "idx": 6253,
+     "label": "Turdus merula_Eurasian Blackbird",
+     "p": 0.8407
+    }
+   ],
+   "n_ge_010": 102
+  }
+ }
+}

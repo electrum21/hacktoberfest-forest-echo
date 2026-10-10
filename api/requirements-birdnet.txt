@@ -1,0 +1,2 @@
+# Optional real acoustic inference (API changed in 1.x: birdnet.load(...))
+birdnet>=1.1,<2

@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FFD3DF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1B4B" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Forest Echo</title>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/fonts/fredoka-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Fredoka";font-style:normal;font-weight:300 700;font-display:swap;src:url("/fonts/fredoka-latin-wght.woff2") format("woff2")}
+
+/* ---------- Tokens: a pastel dawn by day, a dusky indigo sky at night ---------- */
+:root{
+  --sky-1:#CFD8FF;--sky-2:#FFD3DF;--sky-3:#FFE6C4;
+  --hill-1:#C3E6B6;--hill-2:#98D2A2;--hill-3:#72B98F;
+  --ink:#33304A;--ink-soft:#5C577A;--on-ink:#FFF9F0;
+  --card:rgba(255,255,255,.62);--card-strong:rgba(255,255,255,.88);--line:rgba(51,48,74,.16);
+  --chip:rgba(255,255,255,.7);--glow:rgba(255,214,130,.45);
+  --bird:#FFCB47;--bird-deep:#F4A62A;--belly:#FFF0BE;--beak:#FF8A4C;--cheek:#FF8FA3;--eye:#2B2540;
+  --coral:#FF6F91;--hear:rgba(255,203,71,.55);
+  --shadow:0 10px 30px -14px rgba(120,70,110,.4);
+  --stars:0;
+  --font:"Fredoka",ui-rounded,"SF Pro Rounded","Arial Rounded MT Bold",system-ui,sans-serif;
+
+  --i-leaf:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 19c0-8 5-14 15-14 0 10-6 15-14 15'/%3E%3Cpath d='M5 19c3-5 6-8 10-10'/%3E%3C/svg%3E");
+  --i-phones:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 15v-3a8 8 0 0 1 16 0v3'/%3E%3Crect x='3' y='14' width='4' height='7' rx='1.5'/%3E%3Crect x='17' y='14' width='4' height='7' rx='1.5'/%3E%3C/svg%3E");
+  --i-route:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='6' cy='19' r='2.5'/%3E%3Ccircle cx='18' cy='5' r='2.5'/%3E%3Cpath d='M8.5 19H14a3.5 3.5 0 0 0 0-7h-4a3.5 3.5 0 0 1 0-7h5.5'/%3E%3C/svg%3E");
+  --i-moon:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z'/%3E%3C/svg%3E");
+  --i-sun:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4'/%3E%3C/svg%3E");
+  --i-bell:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9a6 6 0 0 1 12 0c0 6 2 7 2 7H4s2-1 2-7'/%3E%3Cpath d='M10 20a2 2 0 0 0 4 0'/%3E%3C/svg%3E");
+  --i-pin:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z'/%3E%3Ccircle cx='12' cy='10' r='2.5'/%3E%3C/svg%3E");
+  --i-chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --sky-1:#1E1B4B;--sky-2:#46286A;--sky-3:#8A4A7C;
+    --hill-1:#35566B;--hill-2:#2A4A5E;--hill-3:#1F3A4B;
+    --ink:#F4EFFF;--ink-soft:#C7BFE6;--on-ink:#2A2547;
+    --card:rgba(34,26,70,.76);--card-strong:rgba(40,31,82,.9);--line:rgba(244,239,255,.2);
+    --chip:rgba(255,255,255,.1);--glow:rgba(240,235,210,.25);
+    --hear:rgba(255,203,71,.3);--shadow:0 10px 30px -14px rgba(0,0,0,.6);--stars:1;
+  }
+}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden;overflow-x:clip}
+body{margin:0;min-height:100svh;max-width:100vw;overflow-x:hidden;overflow-x:clip;color:var(--ink);font:400 16px/1.4 var(--font);background:var(--sky-2);-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+/* icons drawn with CSS masks so the JS can keep writing plain text into buttons */
+.chip,.mini,header .ico,#inviteWindow{--ico:none}
+.chip::before,.mini::before,header .ico::before,#inviteWindow::before{content:"";flex:none;width:1.2em;height:1.2em;background:currentColor;-webkit-mask:var(--ico) center/contain no-repeat;mask:var(--ico) center/contain no-repeat}
+
+/* ---------- Sky: sun, clouds, hills (decorative) ---------- */
+.sky{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:linear-gradient(180deg,var(--sky-1) 0%,var(--sky-2) 55%,var(--sky-3) 100%)}
+.sky::after{content:"";position:absolute;inset:0;opacity:var(--stars);background-image:
+  radial-gradient(1.6px 1.6px at 12% 14%,#fff,transparent),radial-gradient(1.2px 1.2px at 28% 32%,#fff,transparent),
+  radial-gradient(1.8px 1.8px at 46% 9%,#fff,transparent),radial-gradient(1.2px 1.2px at 63% 26%,#fff,transparent),
+  radial-gradient(1.6px 1.6px at 78% 12%,#fff,transparent),radial-gradient(1.2px 1.2px at 90% 38%,#fff,transparent),
+  radial-gradient(1.4px 1.4px at 6% 46%,#fff,transparent),radial-gradient(1.2px 1.2px at 54% 44%,#fff,transparent)}
+.sun{position:absolute;top:calc(env(safe-area-inset-top) + 26px);right:8vw;width:66px;height:66px;border-radius:50%;
+  background:radial-gradient(circle at 40% 38%,#FFFBE3 0 42%,#FFE08A 100%);
+  box-shadow:0 0 0 12px rgba(255,236,170,.32),0 0 56px 26px var(--glow);animation:rise 3.2s cubic-bezier(.18,.7,.2,1) both}
+@media (prefers-color-scheme:dark){.sun{background:radial-gradient(circle at 38% 36%,#FFFFFA 0 40%,#E6E0C4 100%);box-shadow:0 0 0 10px rgba(240,235,210,.12),0 0 50px 20px var(--glow)}}
+@keyframes rise{from{transform:translateY(85vh)}to{transform:none}}
+.cloud{position:absolute;left:0;fill:#fff;opacity:.7;animation:drift linear infinite}
+@media (prefers-color-scheme:dark){.cloud{fill:#9C86D6;opacity:.28}}
+.cloud.c1{top:17vh;width:150px;animation-duration:110s;animation-delay:-38s}
+.cloud.c2{top:44vh;width:104px;animation-duration:150s;animation-delay:-96s}
+@keyframes drift{from{transform:translateX(-200px)}to{transform:translateX(110vw)}}
+.hills{position:absolute;left:0;bottom:0;width:100%;height:max(26vh,150px)}
+.hills .h1{fill:var(--hill-1)}.hills .h2{fill:var(--hill-2)}.hills .h3{fill:var(--hill-3)}
+
+/* ---------- Page ---------- */
+main{position:relative;z-index:1;width:100%;max-width:460px;margin:0 auto;min-height:100svh;padding:calc(env(safe-area-inset-top) + 16px) 18px calc(env(safe-area-inset-bottom) + 24vh);display:flex;flex-direction:column;align-items:center;gap:16px}
+header{display:flex;align-items:center;gap:8px;height:34px}
+header .ico{display:inline-flex;--ico:var(--i-leaf)}
+h1{margin:0;font-size:1.1rem;font-weight:600;letter-spacing:.01em}
+
+main>*{min-width:0;max-width:100%}
+
+/* ---------- The bird (hold button) ---------- */
+.stage{display:flex;flex-direction:column;align-items:center;gap:6px;margin-top:4px}
+.bird-wrap{position:relative;width:min(70vw,276px);aspect-ratio:1}
+.rings i{position:absolute;inset:19%;border-radius:50%;border:3px solid var(--coral);opacity:0}
+body[data-state=listening] .rings i{animation:ripple 1.9s ease-out infinite}
+body[data-state=listening] .rings i:nth-child(2){animation-delay:.6s}
+body[data-state=listening] .rings i:nth-child(3){animation-delay:1.2s}
+@keyframes ripple{0%{transform:scale(.7);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+.progress{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg);opacity:0;transition:opacity .25s}
+.progress circle{fill:none;stroke-width:2.6;stroke-linecap:round}
+.progress .track{stroke:var(--line)}
+.progress .arc{stroke:var(--coral);stroke-dasharray:301.6;stroke-dashoffset:301.6}
+body[data-state=listening] .progress{opacity:1}
+body[data-state=listening] .progress .arc{animation:fill 5s linear forwards}
+@keyframes fill{to{stroke-dashoffset:0}}
+
+#listen{position:absolute;inset:0;z-index:3;border:0;border-radius:50%;background:transparent;cursor:pointer;
+  display:flex;align-items:flex-end;justify-content:center;padding:0 27% 17%;text-align:center;
+  font-weight:600;font-size:.95rem;line-height:1.12;color:var(--eye);text-wrap:balance;
+  touch-action:none;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.bird-press{position:absolute;inset:0;z-index:2;transition:transform .18s cubic-bezier(.3,1.6,.5,1)}
+#listen:active~.bird-press{transform:scale(.95)}
+.bird{width:100%;height:100%;overflow:visible;transform-origin:50% 92%}
+.bird .shadow{fill:var(--ink);opacity:.12}
+.bird .feet path{fill:none;stroke:var(--beak);stroke-width:5;stroke-linecap:round}
+.bird .body{fill:var(--bird)}
+.bird .belly{fill:var(--belly)}
+.bird .shine{fill:#fff;opacity:.4}
+.bird .tuft{fill:none;stroke:var(--bird-deep);stroke-width:7;stroke-linecap:round}
+.bird .wing ellipse{fill:var(--bird-deep)}
+.bird .wing{transform-box:fill-box;transform-origin:50% 12%}
+.bird .wl{--dir:1}.bird .wr{--dir:-1}
+.bird .cheek{fill:var(--cheek);opacity:.8}
+.bird .pupil{fill:var(--eye)}
+.bird .glint{fill:#fff}
+.bird .eye{transform-box:fill-box;transform-origin:center;transition:transform .25s cubic-bezier(.3,1.6,.5,1),opacity .2s}
+.bird .look{transition:transform .2s}
+.bird .lid{fill:var(--bird);transform-box:fill-box;transform-origin:50% 0;transform:scaleY(0);animation:blink 5.5s infinite}
+@keyframes blink{0%,93%,100%{transform:scaleY(0)}95.5%{transform:scaleY(1)}}
+.bird .shut{fill:none;stroke:var(--eye);stroke-width:5;stroke-linecap:round;opacity:0;transition:opacity .2s}
+.bird .beak{fill:var(--beak)}
+.bird .jaw{fill:var(--beak);opacity:0;transform-box:fill-box;transform-origin:50% 0}
+.bird .mouth{fill:#8A3347;opacity:0;transform-box:fill-box;transform-origin:50% 0}
+
+/* what the bird does in each state */
+body[data-state=idle] .bird,body[data-state=silent] .bird{animation:breathe 4.4s ease-in-out infinite}
+body[data-state=silent] .bird{animation-duration:6.5s}
+@keyframes breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4px) scale(1.012,.988)}}
+body[data-state=listening] .bird{animation:lean 1.7s ease-in-out infinite}
+@keyframes lean{0%,100%{transform:scale(1.04,1.07) rotate(-4deg)}50%{transform:scale(1.04,1.07) rotate(3deg)}}
+body[data-state=listening] .eye{transform:scale(1.2)}
+body[data-state=listening] .wing{animation:flap .5s ease-in-out infinite alternate}
+@keyframes flap{to{transform:rotate(calc(var(--dir)*-16deg))}}
+body[data-state=analyzing] .bird{animation:ponder 1.7s ease-in-out infinite alternate}
+@keyframes ponder{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
+body[data-state=analyzing] .look{animation:glance 1.7s ease-in-out infinite alternate}
+@keyframes glance{from{transform:translate(-3.5px,-5px)}to{transform:translate(3.5px,-5px)}}
+body[data-state=responding] .bird{animation:sing .62s ease-in-out infinite}
+@keyframes sing{0%,100%{transform:translateY(0) scale(1.02,.97)}50%{transform:translateY(-9px) scale(.98,1.03)}}
+body[data-state=responding] .wing{animation:flap .32s ease-in-out infinite alternate}
+body[data-state=responding] .mouth{opacity:1;animation:open .62s ease-in-out infinite}
+body[data-state=responding] .jaw{opacity:1;animation:drop .62s ease-in-out infinite}
+@keyframes open{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1.5)}}
+@keyframes drop{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+body[data-state=silent] .eye,body.asleep .eye{opacity:0}
+body[data-state=silent] .shut,body.asleep .shut{opacity:1}
+body.asleep .bird{animation:none}
+.bird.bump{animation:bump .6s cubic-bezier(.3,1.6,.5,1)!important}
+@keyframes bump{0%{transform:scale(.96)}45%{transform:scale(1.06,1.08) translateY(-8px)}100%{transform:scale(1)}}
+
+/* little extras: thinking dots, floating notes, timer */
+.think{position:absolute;z-index:4;top:-1%;left:50%;transform:translateX(-50%);display:flex;gap:7px;opacity:0;transition:opacity .2s}
+.think i{width:10px;height:10px;border-radius:50%;background:var(--ink-soft)}
+body[data-state=analyzing] .think{opacity:1}
+body[data-state=analyzing] .think i{animation:hop 1s ease-in-out infinite}
+body[data-state=analyzing] .think i:nth-child(2){animation-delay:.15s}
+body[data-state=analyzing] .think i:nth-child(3){animation-delay:.3s}
+@keyframes hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-7px)}}
+.notes svg{position:absolute;z-index:4;width:30px;height:30px;color:var(--coral);opacity:0;top:20%}
+.notes svg:nth-child(1){left:6%}
+.notes svg:nth-child(2){right:4%;top:14%;color:var(--bird-deep)}
+.notes svg:nth-child(3){left:24%;top:2%;width:24px;height:24px;color:var(--ink-soft)}
+body[data-state=responding] .notes svg{animation:float 1.9s ease-out infinite}
+body[data-state=responding] .notes svg:nth-child(2){animation-delay:.5s}
+body[data-state=responding] .notes svg:nth-child(3){animation-delay:1.1s}
+@keyframes float{0%{transform:translateY(14px) rotate(-8deg) scale(.7);opacity:0}25%{opacity:1}100%{transform:translateY(-36px) rotate(10deg) scale(1);opacity:0}}
+#timer{position:absolute;z-index:4;top:2%;right:6%;padding:3px 10px;border-radius:999px;background:var(--card-strong);font-size:.82rem;font-weight:500;font-variant-numeric:tabular-nums;box-shadow:var(--shadow)}
+#timer:empty{display:none}
+#status{min-height:1.4em;text-align:center;font-size:1rem;font-weight:500;color:var(--ink-soft);max-width:30ch;text-wrap:balance}
+
+/* ---------- Result bubble ---------- */
+.bubble{position:relative;width:100%;padding:18px 20px 16px;border-radius:30px 30px 30px 12px;background:var(--card-strong);box-shadow:var(--shadow);text-align:center;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.bubble::before{content:"";position:absolute;top:-8px;left:50%;width:18px;height:18px;margin-left:-9px;background:inherit;border-radius:5px 0 0 0;transform:rotate(45deg)}
+.bubble.pop{animation:pop .5s cubic-bezier(.3,1.5,.5,1)}
+@keyframes pop{from{transform:translateY(14px) scale(.9);opacity:0}to{transform:none;opacity:1}}
+#species{font-size:1.65rem;font-weight:600;line-height:1.1}
+#meta{margin-top:7px;font-size:.96rem;line-height:1.45;color:var(--ink-soft);text-wrap:pretty}
+#meta:empty{display:none}
+
+/* ---------- Chips ---------- */
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:7px}
+.chip{display:inline-flex;align-items:center;gap:5px;padding:8px 12px 8px 9px;border:1.5px solid var(--line);border-radius:999px;background:var(--chip);font-size:.86rem;font-weight:500;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:background .2s,color .2s,transform .15s cubic-bezier(.3,1.6,.5,1)}
+.chip:active{transform:scale(.93)}
+.chip[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--on-ink)}
+#handsfree{--ico:var(--i-phones)}#walk{--ico:var(--i-route)}#pocketToggle{--ico:var(--i-moon)}
+#walkInfo{margin-top:-6px;max-width:34ch;text-align:center;font-size:.82rem;line-height:1.4;color:var(--ink-soft);text-wrap:pretty}
+#walkInfo:empty{display:none}
+
+/* ---------- Invitation card ---------- */
+.card{width:100%;min-width:0;padding:18px 20px;border-radius:26px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);-webkit-backdrop-filter:blur(12px) saturate(1.2);backdrop-filter:blur(12px) saturate(1.2);display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+#inviteWindow{display:flex;gap:10px;align-items:flex-start;min-width:0;max-width:100%;overflow-wrap:anywhere;font-size:1.04rem;font-weight:500;line-height:1.3;--ico:var(--i-sun)}
+#inviteWindow::before{margin-top:.08em;color:var(--bird-deep)}
+#inviteTarget{max-width:100%;padding:6px 14px;border-radius:18px;background:var(--hear);font-size:.92rem;font-weight:500}
+#inviteTarget:empty{display:none}
+.dots-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+#inviteDays{display:flex;gap:7px}
+#inviteDays i{width:15px;height:15px;border-radius:50%;border:2px solid var(--ink-soft);opacity:.5}
+#inviteDays i.on{background:var(--bird);border-color:var(--bird-deep);opacity:1;animation:dot .45s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--i)*70ms)}
+@keyframes dot{from{transform:scale(0)}to{transform:scale(1)}}
+#inviteDaysNote{font-size:.84rem;color:var(--ink-soft)}
+.actions{display:flex;flex-wrap:wrap;gap:8px}
+.mini{display:inline-flex;align-items:center;gap:7px;padding:8px 13px 8px 10px;border:1.5px solid var(--line);border-radius:999px;background:var(--chip);font-size:.86rem;font-weight:500;cursor:pointer;transition:transform .15s cubic-bezier(.3,1.6,.5,1)}
+.mini:active{transform:scale(.94)}
+#inviteLoc,#useLoc{--ico:var(--i-pin)}#inviteCal{--ico:var(--i-bell)}
+#inviteCalNote{font-size:.8rem;line-height:1.4;color:var(--ink-soft)}
+#inviteCalNote:empty{display:none}
+
+/* ---------- Collapsible lists ---------- */
+.stack{width:100%;display:flex;flex-direction:column;gap:10px}
+details.week{width:100%;border-radius:22px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);overflow:hidden}
+details.week summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;font-size:.98rem;font-weight:500;cursor:pointer;list-style:none}
+details.week summary::-webkit-details-marker{display:none}
+details.week summary::after{content:"";flex:none;width:1.2em;height:1.2em;background:currentColor;-webkit-mask:var(--i-chev) center/contain no-repeat;mask:var(--i-chev) center/contain no-repeat;transition:transform .25s}
+details.week[open] summary::after{transform:rotate(180deg)}
+details.week>div,details.week>p{padding:0 18px 16px;margin:0}
+details.week>ul{padding:0 18px 16px;margin:0}
+details.week[open]>div,details.week[open]>ul,details.week[open]>p{animation:unfold .3s ease-out}
+@keyframes unfold{from{opacity:0;transform:translateY(-6px)}}
+#nearbyNote{margin:10px 0 0;font-size:.8rem;line-height:1.45;color:var(--ink-soft)}
+#nearbyList,#weekList,#lifeList{display:flex;flex-wrap:wrap;gap:6px;list-style:none}
+#nearbyList{margin:10px 0 0;padding:0}
+#weekList,#lifeList{margin:0}
+    #deviceProgress{width:100%;margin:6px 0;accent-color:var(--accent,#5b8a4a)}
+#nearbyList li,#weekList li,#lifeList li{padding:5px 12px;border-radius:999px;background:var(--chip);border:1.5px solid var(--line);font-size:.88rem}
+#nearbyList li.heard{background:var(--hear);border-color:transparent}
+.how p{font-size:.88rem;line-height:1.5;color:var(--ink-soft);max-width:44ch}
+.how p+p{padding-top:0;margin-top:-6px}
+
+/* ---------- Pocket mode: the screen rests so you look up ---------- */
+#pocketScreen{position:fixed;inset:0;z-index:10;background:#000;display:flex;align-items:flex-end;justify-content:center;padding:0 24px calc(env(safe-area-inset-bottom) + 28px);color:#3C4A40;font-size:.85rem;opacity:0;pointer-events:none;transition:opacity .8s ease;cursor:pointer}
+#pocketScreen.on{opacity:1;pointer-events:auto}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  body[data-state=listening] .progress .arc{stroke-dashoffset:0}
+  .cloud{display:none}
+}
+@media (max-height:640px){.bird-wrap{width:min(58vw,230px)}}
+</style>
+</head>
+<body data-state="idle">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="note" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6.5" cy="18" r="3.2" fill="currentColor"/><circle cx="17.5" cy="16" r="3.2" fill="currentColor"/></symbol>
+</svg>
+
+<div class="sky" aria-hidden="true">
+  <div class="sun"></div>
+  <svg class="cloud c1" viewBox="0 0 120 56"><circle cx="30" cy="38" r="16"/><circle cx="54" cy="27" r="23"/><circle cx="82" cy="35" r="18"/><rect x="30" y="36" width="64" height="18" rx="9"/></svg>
+  <svg class="cloud c2" viewBox="0 0 120 56"><circle cx="30" cy="38" r="16"/><circle cx="54" cy="27" r="23"/><circle cx="82" cy="35" r="18"/><rect x="30" y="36" width="64" height="18" rx="9"/></svg>
+  <svg class="hills" viewBox="0 0 400 200" preserveAspectRatio="none">
+    <path class="h1" d="M0 80C60 40 110 62 170 78S300 40 400 70V200H0Z"/>
+    <path class="h2" d="M0 120C70 90 140 100 200 118S330 96 400 112V200H0Z"/>
+    <path class="h3" d="M0 162C80 140 150 152 220 162S340 144 400 158V200H0Z"/>
+  </svg>
+</div>
+
+<main>
+  <header><span class="ico" aria-hidden="true"></span><h1>Forest Echo</h1></header>
+
+  <section class="stage">
+    <div class="bird-wrap">
+      <div class="rings" aria-hidden="true"><i></i><i></i><i></i></div>
+      <svg class="progress" viewBox="0 0 100 100" aria-hidden="true"><circle class="track" cx="50" cy="50" r="48"/><circle class="arc" cx="50" cy="50" r="48"/></svg>
+      <button id="listen" type="button">Hold to listen</button>
+      <div class="bird-press" aria-hidden="true">
+        <svg class="bird" viewBox="0 0 240 240">
+          <ellipse class="shadow" cx="120" cy="227" rx="64" ry="8"/>
+          <g class="feet"><path d="M100 212v10M93 222h14M140 212v10M133 222h14"/></g>
+          <g class="wing wl"><ellipse cx="38" cy="140" rx="15" ry="31" transform="rotate(14 38 140)"/></g>
+          <g class="wing wr"><ellipse cx="202" cy="140" rx="15" ry="31" transform="rotate(-14 202 140)"/></g>
+          <path class="tuft" d="M106 48c-4-13 4-20 8-9M120 44c0-15 10-18 11-6M134 49c4-11 13-12 12-2"/>
+          <ellipse class="body" cx="120" cy="130" rx="90" ry="84"/>
+          <ellipse class="belly" cx="120" cy="171" rx="58" ry="40"/>
+          <ellipse class="shine" cx="84" cy="74" rx="22" ry="11" transform="rotate(-28 84 74)"/>
+          <ellipse class="cheek" cx="62" cy="138" rx="14" ry="9"/>
+          <ellipse class="cheek" cx="178" cy="138" rx="14" ry="9"/>
+          <g transform="translate(88 112)"><g class="eye"><g class="look"><circle class="pupil" r="10.5"/><circle class="glint" cx="-3.5" cy="-4" r="3.6"/><circle class="glint" cx="3.5" cy="3.5" r="1.8"/></g><ellipse class="lid" rx="12.5" ry="12.5"/></g></g>
+          <g transform="translate(152 112)"><g class="eye"><g class="look"><circle class="pupil" r="10.5"/><circle class="glint" cx="-3.5" cy="-4" r="3.6"/><circle class="glint" cx="3.5" cy="3.5" r="1.8"/></g><ellipse class="lid" rx="12.5" ry="12.5"/></g></g>
+          <path class="shut" d="M76 114q12-13 24 0"/><path class="shut" d="M140 114q12-13 24 0"/>
+          <ellipse class="mouth" cx="120" cy="140" rx="8" ry="4"/>
+          <path class="jaw" d="M109 138q11 14 22 0q-11 4-22 0z"/>
+          <path class="beak" d="M105 127q15-11 30 0q-5 15-15 16q-10-1-15-16z"/>
+        </svg>
+      </div>
+      <div class="think" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="notes" aria-hidden="true"><svg><use href="#note"/></svg><svg><use href="#note"/></svg><svg><use href="#note"/></svg></div>
+      <div id="timer" aria-hidden="true"></div>
+    </div>
+    <div id="status" aria-live="polite">Tap once to allow the microphone.</div>
+  </section>
+
+  <section id="result" class="bubble" aria-live="polite" hidden>
+    <div id="species"></div>
+    <div id="meta"></div>
+  </section>
+
+  <div class="chips">
+    <button id="handsfree" class="chip" type="button" aria-pressed="false" title="Press your headphones' play/pause button to capture about 4 seconds">Hands-free</button>
+    <button id="walk" class="chip" type="button" aria-pressed="false">Start walk</button>
+    <button id="pocketToggle" class="chip" type="button" aria-pressed="true" aria-label="Pocket mode" title="Pocket mode: the screen goes dark after each note so you look up">Pocket</button>
+  </div>
+  <div id="walkInfo" aria-live="polite"></div>
+
+  <section class="card" id="invite" aria-live="polite">
+    <div id="inviteWindow"></div>
+    <div id="inviteTarget"></div>
+    <div class="dots-row"><div id="inviteDays" role="img" aria-label=""></div><div id="inviteDaysNote"></div></div>
+    <div class="actions">
+      <button id="inviteLoc" class="mini" type="button" hidden>Use my location</button>
+      <button id="inviteCal" class="mini" type="button">Weekly reminder</button>
+    </div>
+    <div id="inviteCalNote"></div>
+  </section>
+
+  <div class="stack">
+    <details class="week" id="nearby">
+      <summary id="nearbySummary">Near you this week</summary>
+      <div>
+        <button id="useLoc" class="mini" type="button" aria-pressed="false">Use my location</button>
+        <div id="nearbyNote">Your location goes only to the server running this app, rounded to about 1 km, and is not stored. It also narrows identifications to species plausible here.</div>
+        <ul id="nearbyList"></ul>
+      </div>
+    </details>
+    <details class="week" id="device">
+      <summary id="deviceSummary">On-device mode</summary>
+      <div>
+        <div id="deviceNote" class="meta"></div>
+        <button id="devicePack" class="link" type="button">Download offline pack (about 75 MB)</button>
+        <progress id="deviceProgress" max="100" value="0" hidden></progress>
+        <button id="deviceToggle" class="link" type="button" aria-pressed="false" hidden>Identify on this phone: off</button>
+        <button id="deviceRemove" class="link" type="button" hidden>Remove offline pack</button>
+      </div>
+    </details>
+    <details class="week">
+      <summary id="lifeSummary">Life list</summary>
+      <ul id="lifeList"></ul>
+    </details>
+    <details class="week">
+      <summary id="weekSummary">Heard this week</summary>
+      <ul id="weekList"></ul>
+    </details>
+    <details class="week how">
+      <summary>How it works</summary>
+      <p>Hold the bird for 1–5 seconds when you notice a sound. Open-ear headphones keep the real soundscape audible.</p>
+      <p>Hands-free (experimental): once on, press your headphones’ play/pause button to capture about 4 seconds, with a soft tick at the start and end.</p>
+    </details>
+  </div>
+
+  <div id="pocketScreen" role="button" tabindex="-1" aria-hidden="true" aria-label="Screen resting. Tap to wake.">Eyes up. Tap to wake.</div>
+  <audio id="player" preload="none"></audio>
+  <audio id="keepalive" preload="none" playsinline></audio>
+</main>
+<script src="/invite.js"></script>
+<script src="/trail.js"></script>
+<script src="/ondevice/dsp.js"></script>
+<script src="/ondevice/client.js"></script>
+<script src="/app.js"></script>
+<script src="/ui.js"></script>
+</body>
+</html>

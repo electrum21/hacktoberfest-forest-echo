@@ -1,0 +1,17 @@
+services:
+  api:
+    build: .
+    environment:
+      CLASSIFIER: demo
+      MASTRA_URL: http://mastra:4112
+      ELEVENLABS_API_KEY: ${ELEVENLABS_API_KEY:-}
+    ports: ["8000:8000"]
+    depends_on: [mastra]
+  mastra:
+    build: ./mastra
+    environment:
+      PORT: 4112
+      OLLAMA_BASE_URL: http://host.docker.internal:11434/api
+      GEMMA_MODEL: gemma3n:e2b
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    ports: ["4112:4112"]

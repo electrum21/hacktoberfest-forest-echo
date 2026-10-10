@@ -1,0 +1,242 @@
+{
+ "_note": "Short, speakable facts for common US birds. Entries marked verified were checked against published sources; the rest are drafted from general knowledge and should be spot-checked (All About Birds, Birds of the World) before you rely on them. Keys match BirdNET labels by scientific name first, then common name. Add a bird by appending an entry; keep look_tip and fun_fact to one short sentence each.",
+ "verified": [
+  "Tufted Titmouse",
+  "Eastern Phoebe",
+  "Black-capped Chickadee",
+  "Wood Thrush"
+ ],
+ "species": [
+  {
+   "scientific_name": "Turdus migratorius",
+   "common_name": "American Robin",
+   "habitat": "lawns, parks, woodland edges and suburban yards",
+   "look_tip": "Look on open lawns, or high on a treetop perch when it sings.",
+   "fun_fact": "It is often among the first birds to sing before dawn."
+  },
+  {
+   "scientific_name": "Cardinalis cardinalis",
+   "common_name": "Northern Cardinal",
+   "habitat": "thickets, forest edges, gardens and parks",
+   "look_tip": "Look low in dense shrubs, or high on a perch when it sings.",
+   "fun_fact": "Unusually for songbirds, females sing as well as males."
+  },
+  {
+   "scientific_name": "Cyanocitta cristata",
+   "common_name": "Blue Jay",
+   "habitat": "oak and mixed woodland, suburbs and city parks",
+   "look_tip": "Look in the upper branches of oaks and other tall trees.",
+   "fun_fact": "It sometimes imitates the calls of hawks."
+  },
+  {
+   "scientific_name": "Corvus brachyrhynchos",
+   "common_name": "American Crow",
+   "habitat": "fields, woodland edges, towns and cities",
+   "look_tip": "Look on open ground, or on high branches and wires.",
+   "fun_fact": "Family groups stay together, with older young helping to raise new chicks."
+  },
+  {
+   "scientific_name": "Melospiza melodia",
+   "common_name": "Song Sparrow",
+   "habitat": "brushy edges, marshes, hedgerows and gardens",
+   "look_tip": "Look for a small streaky bird singing from a low perch in shrubs.",
+   "fun_fact": "Each male sings several different song types."
+  },
+  {
+   "scientific_name": "Zenaida macroura",
+   "common_name": "Mourning Dove",
+   "habitat": "open country, farmland, suburbs and parks",
+   "look_tip": "Look on wires, fence posts and open ground.",
+   "fun_fact": "Its wings make a whistling sound when it takes off."
+  },
+  {
+   "scientific_name": "Poecile atricapillus",
+   "common_name": "Black-capped Chickadee",
+   "habitat": "deciduous and mixed woods, thickets and feeders",
+   "look_tip": "Look for small flocks flitting through branches at eye level.",
+   "fun_fact": "Extra dee notes at the end of its call can signal a more dangerous predator nearby."
+  },
+  {
+   "scientific_name": "Poecile carolinensis",
+   "common_name": "Carolina Chickadee",
+   "habitat": "woods, thickets and backyards in the Southeast",
+   "look_tip": "Look for small flocks flitting through branches at eye level.",
+   "fun_fact": "Its song has four notes, where the Black-capped Chickadee's has two."
+  },
+  {
+   "scientific_name": "Baeolophus bicolor",
+   "common_name": "Tufted Titmouse",
+   "habitat": "deciduous woods, parks and backyards",
+   "look_tip": "Look in the mid-level branches of oaks and other broadleaf trees.",
+   "fun_fact": "It sometimes lines its nest with hair plucked from living animals."
+  },
+  {
+   "scientific_name": "Dryobates pubescens",
+   "common_name": "Downy Woodpecker",
+   "habitat": "woodlands, orchards, parks and backyards",
+   "look_tip": "Look for it clinging to trunks, thin branches and weed stalks.",
+   "fun_fact": "It is the smallest woodpecker in North America."
+  },
+  {
+   "scientific_name": "Sitta carolinensis",
+   "common_name": "White-breasted Nuthatch",
+   "habitat": "mature deciduous and mixed woods",
+   "look_tip": "Look for it creeping headfirst down tree trunks.",
+   "fun_fact": "It wedges large seeds into bark and hacks them open with its bill."
+  },
+  {
+   "scientific_name": "Thryothorus ludovicianus",
+   "common_name": "Carolina Wren",
+   "habitat": "dense tangles, brush piles and wooded edges",
+   "look_tip": "Look low in tangles and brush, often with its tail cocked up.",
+   "fun_fact": "Its loud, ringing song carries far for such a small bird."
+  },
+  {
+   "scientific_name": "Haemorhous mexicanus",
+   "common_name": "House Finch",
+   "habitat": "towns, suburbs, farms and open woodland",
+   "look_tip": "Look on wires, feeders and treetops.",
+   "fun_fact": "The male's red color comes from pigments in the food it eats."
+  },
+  {
+   "scientific_name": "Junco hyemalis",
+   "common_name": "Dark-eyed Junco",
+   "habitat": "conifer and mixed woods, plus winter fields and yards",
+   "look_tip": "Look for it hopping on the ground near cover.",
+   "fun_fact": "White outer tail feathers flash as it flies away."
+  },
+  {
+   "scientific_name": "Agelaius phoeniceus",
+   "common_name": "Red-winged Blackbird",
+   "habitat": "marshes, wet meadows and roadside ditches",
+   "look_tip": "Look for males singing from the tops of cattails and reeds.",
+   "fun_fact": "Males flash red shoulder patches to defend their territory."
+  },
+  {
+   "scientific_name": "Geothlypis trichas",
+   "common_name": "Common Yellowthroat",
+   "habitat": "marsh edges, wet meadows and thick low vegetation",
+   "look_tip": "Look low in dense reeds and shrubs; males sing from open stems.",
+   "fun_fact": "Its song is often written as witchety-witchety-witchety."
+  },
+  {
+   "scientific_name": "Sayornis phoebe",
+   "common_name": "Eastern Phoebe",
+   "habitat": "streamsides, bridges, barns and open woods",
+   "look_tip": "Look for it perched low near water, wagging its tail.",
+   "fun_fact": "In 1804 it became the first bird banded in North America, by Audubon."
+  },
+  {
+   "scientific_name": "Pipilo erythrophthalmus",
+   "common_name": "Eastern Towhee",
+   "habitat": "shrubby edges, thickets and brushy woodland",
+   "look_tip": "Look for it scratching in leaf litter beneath thick shrubs.",
+   "fun_fact": "It kicks both feet backward at once to uncover food."
+  },
+  {
+   "scientific_name": "Hylocichla mustelina",
+   "common_name": "Wood Thrush",
+   "habitat": "shady, moist deciduous forest",
+   "look_tip": "Look on the forest floor and low branches in shady woods.",
+   "fun_fact": "It can sing two notes at once."
+  },
+  {
+   "scientific_name": "Seiurus aurocapilla",
+   "common_name": "Ovenbird",
+   "habitat": "mature deciduous and mixed forest",
+   "look_tip": "Look for it walking on the leafy forest floor.",
+   "fun_fact": "Its dome-shaped ground nest looks like a small outdoor oven."
+  },
+  {
+   "scientific_name": "Vireo olivaceus",
+   "common_name": "Red-eyed Vireo",
+   "habitat": "deciduous forest canopy",
+   "look_tip": "Look high in the leafy canopy; it is far easier to hear than to see.",
+   "fun_fact": "A male may sing thousands of times in a single day."
+  },
+  {
+   "scientific_name": "Dumetella carolinensis",
+   "common_name": "Gray Catbird",
+   "habitat": "dense thickets, shrubby edges and gardens",
+   "look_tip": "Look low in thick shrubs and tangles.",
+   "fun_fact": "Its mewing call sounds like a cat."
+  },
+  {
+   "scientific_name": "Mimus polyglottos",
+   "common_name": "Northern Mockingbird",
+   "habitat": "open suburbs, parks and shrubby fields",
+   "look_tip": "Look on rooftops, wires and shrub tops.",
+   "fun_fact": "Some males sing through the night, imitating other birds."
+  },
+  {
+   "scientific_name": "Passer domesticus",
+   "common_name": "House Sparrow",
+   "habitat": "cities, towns and farms",
+   "look_tip": "Look around buildings, hedges and feeders.",
+   "fun_fact": "It was introduced to North America in the 1850s."
+  },
+  {
+   "scientific_name": "Sturnus vulgaris",
+   "common_name": "European Starling",
+   "habitat": "cities, suburbs, farms and open ground",
+   "look_tip": "Look on lawns, wires and rooftops.",
+   "fun_fact": "It was introduced to New York City in 1890 and spread across the continent."
+  },
+  {
+   "scientific_name": "Strix varia",
+   "common_name": "Barred Owl",
+   "habitat": "mature wet woods and swampy forest",
+   "look_tip": "Look at dusk for a large round-headed owl on a big branch near the trunk.",
+   "fun_fact": "Its call is often written as who cooks for you."
+  },
+  {
+   "scientific_name": "Bubo virginianus",
+   "common_name": "Great Horned Owl",
+   "habitat": "woodlands, farmland, deserts and city parks",
+   "look_tip": "Look for a large owl with ear tufts, perched against a trunk at dusk.",
+   "fun_fact": "It often nests in late winter, using old nests built by other birds."
+  },
+  {
+   "scientific_name": "Colaptes auratus",
+   "common_name": "Northern Flicker",
+   "habitat": "open woods, edges, lawns and parks",
+   "look_tip": "Look on the ground in lawns, or clinging to trunks.",
+   "fun_fact": "It often feeds on the ground, eating ants."
+  },
+  {
+   "scientific_name": "Spinus tristis",
+   "common_name": "American Goldfinch",
+   "habitat": "weedy fields, roadsides and gardens",
+   "look_tip": "Look on the seed heads of thistles and other weeds.",
+   "fun_fact": "It nests late in summer, when thistle seed is plentiful."
+  },
+  {
+   "scientific_name": "Sialia sialis",
+   "common_name": "Eastern Bluebird",
+   "habitat": "open country with scattered trees, farms and orchards",
+   "look_tip": "Look on fence posts, wires and low branches over open ground.",
+   "fun_fact": "It nests in tree cavities and readily uses nest boxes."
+  },
+  {
+   "scientific_name": "Contopus virens",
+   "common_name": "Eastern Wood-Pewee",
+   "habitat": "mature deciduous and mixed woods",
+   "look_tip": "Look on a bare mid-level branch, from where it darts out after insects.",
+   "fun_fact": "It keeps singing at dusk, after most other birds have stopped."
+  },
+  {
+   "scientific_name": "Spizella passerina",
+   "common_name": "Chipping Sparrow",
+   "habitat": "lawns, parks, open woods and conifer edges",
+   "look_tip": "Look on short grass and low conifer branches.",
+   "fun_fact": "Its song is a long, dry trill on a single pitch."
+  },
+  {
+   "scientific_name": "Melanerpes carolinus",
+   "common_name": "Red-bellied Woodpecker",
+   "habitat": "mature woods, suburbs and parks",
+   "look_tip": "Look on trunks and large limbs.",
+   "fun_fact": "Its red belly blush is faint and rarely seen."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "forest-echo-mastra",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.32.0",
+    "ai": "^5.0.0",
+    "express": "^5.1.0",
+    "ollama-ai-provider-v2": "^1.2.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

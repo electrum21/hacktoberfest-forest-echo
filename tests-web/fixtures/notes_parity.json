@@ -1,0 +1,308 @@
+[
+ {
+  "scientific": "Turdus migratorius",
+  "common": "American Robin",
+  "text": "That’s an American Robin. Look on open lawns, or high on a treetop perch when it sings.",
+  "badge": "Trail Tracker",
+  "habitat": "lawns, parks, woodland edges and suburban yards",
+  "look_tip": "Look on open lawns, or high on a treetop perch when it sings.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Cardinalis cardinalis",
+  "common": "Northern Cardinal",
+  "text": "That’s a Northern Cardinal. Look low in dense shrubs, or high on a perch when it sings.",
+  "badge": "Trail Tracker",
+  "habitat": "thickets, forest edges, gardens and parks",
+  "look_tip": "Look low in dense shrubs, or high on a perch when it sings.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Cyanocitta cristata",
+  "common": "Blue Jay",
+  "text": "That’s a Blue Jay. Look in the upper branches of oaks and other tall trees.",
+  "badge": "Trail Tracker",
+  "habitat": "oak and mixed woodland, suburbs and city parks",
+  "look_tip": "Look in the upper branches of oaks and other tall trees.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Corvus brachyrhynchos",
+  "common": "American Crow",
+  "text": "That’s an American Crow. Look on open ground, or on high branches and wires.",
+  "badge": "Trail Tracker",
+  "habitat": "fields, woodland edges, towns and cities",
+  "look_tip": "Look on open ground, or on high branches and wires.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Melospiza melodia",
+  "common": "Song Sparrow",
+  "text": "That’s a Song Sparrow. Look for a small streaky bird singing from a low perch in shrubs.",
+  "badge": "Trail Tracker",
+  "habitat": "brushy edges, marshes, hedgerows and gardens",
+  "look_tip": "Look for a small streaky bird singing from a low perch in shrubs.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Zenaida macroura",
+  "common": "Mourning Dove",
+  "text": "That’s a Mourning Dove. Look on wires, fence posts and open ground.",
+  "badge": "Trail Tracker",
+  "habitat": "open country, farmland, suburbs and parks",
+  "look_tip": "Look on wires, fence posts and open ground.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Poecile atricapillus",
+  "common": "Black-capped Chickadee",
+  "text": "That’s a Black-capped Chickadee. Look for small flocks flitting through branches at eye level.",
+  "badge": "Trail Tracker",
+  "habitat": "deciduous and mixed woods, thickets and feeders",
+  "look_tip": "Look for small flocks flitting through branches at eye level.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Poecile carolinensis",
+  "common": "Carolina Chickadee",
+  "text": "That’s a Carolina Chickadee. Look for small flocks flitting through branches at eye level.",
+  "badge": "Trail Tracker",
+  "habitat": "woods, thickets and backyards in the Southeast",
+  "look_tip": "Look for small flocks flitting through branches at eye level.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Baeolophus bicolor",
+  "common": "Tufted Titmouse",
+  "text": "That’s a Tufted Titmouse. Look in the mid-level branches of oaks and other broadleaf trees.",
+  "badge": "Trail Tracker",
+  "habitat": "deciduous woods, parks and backyards",
+  "look_tip": "Look in the mid-level branches of oaks and other broadleaf trees.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Dryobates pubescens",
+  "common": "Downy Woodpecker",
+  "text": "That’s a Downy Woodpecker. Look for it clinging to trunks, thin branches and weed stalks.",
+  "badge": "Trail Tracker",
+  "habitat": "woodlands, orchards, parks and backyards",
+  "look_tip": "Look for it clinging to trunks, thin branches and weed stalks.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Sitta carolinensis",
+  "common": "White-breasted Nuthatch",
+  "text": "That’s a White-breasted Nuthatch. Look for it creeping headfirst down tree trunks.",
+  "badge": "Trail Tracker",
+  "habitat": "mature deciduous and mixed woods",
+  "look_tip": "Look for it creeping headfirst down tree trunks.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Thryothorus ludovicianus",
+  "common": "Carolina Wren",
+  "text": "That’s a Carolina Wren. Look low in tangles and brush, often with its tail cocked up.",
+  "badge": "Trail Tracker",
+  "habitat": "dense tangles, brush piles and wooded edges",
+  "look_tip": "Look low in tangles and brush, often with its tail cocked up.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Haemorhous mexicanus",
+  "common": "House Finch",
+  "text": "That’s a House Finch. Look on wires, feeders and treetops.",
+  "badge": "Trail Tracker",
+  "habitat": "towns, suburbs, farms and open woodland",
+  "look_tip": "Look on wires, feeders and treetops.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Junco hyemalis",
+  "common": "Dark-eyed Junco",
+  "text": "That’s a Dark-eyed Junco. Look for it hopping on the ground near cover.",
+  "badge": "Trail Tracker",
+  "habitat": "conifer and mixed woods, plus winter fields and yards",
+  "look_tip": "Look for it hopping on the ground near cover.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Agelaius phoeniceus",
+  "common": "Red-winged Blackbird",
+  "text": "That’s a Red-winged Blackbird. Look for males singing from the tops of cattails and reeds.",
+  "badge": "Trail Tracker",
+  "habitat": "marshes, wet meadows and roadside ditches",
+  "look_tip": "Look for males singing from the tops of cattails and reeds.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Geothlypis trichas",
+  "common": "Common Yellowthroat",
+  "text": "That’s a Common Yellowthroat. Look low in dense reeds and shrubs; males sing from open stems.",
+  "badge": "Trail Tracker",
+  "habitat": "marsh edges, wet meadows and thick low vegetation",
+  "look_tip": "Look low in dense reeds and shrubs; males sing from open stems.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Sayornis phoebe",
+  "common": "Eastern Phoebe",
+  "text": "That’s an Eastern Phoebe. Look for it perched low near water, wagging its tail.",
+  "badge": "Trail Tracker",
+  "habitat": "streamsides, bridges, barns and open woods",
+  "look_tip": "Look for it perched low near water, wagging its tail.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Pipilo erythrophthalmus",
+  "common": "Eastern Towhee",
+  "text": "That’s an Eastern Towhee. Look for it scratching in leaf litter beneath thick shrubs.",
+  "badge": "Trail Tracker",
+  "habitat": "shrubby edges, thickets and brushy woodland",
+  "look_tip": "Look for it scratching in leaf litter beneath thick shrubs.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Hylocichla mustelina",
+  "common": "Wood Thrush",
+  "text": "That’s a Wood Thrush. Look on the forest floor and low branches in shady woods.",
+  "badge": "Trail Tracker",
+  "habitat": "shady, moist deciduous forest",
+  "look_tip": "Look on the forest floor and low branches in shady woods.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Seiurus aurocapilla",
+  "common": "Ovenbird",
+  "text": "That’s an Ovenbird. Look for it walking on the leafy forest floor.",
+  "badge": "Trail Tracker",
+  "habitat": "mature deciduous and mixed forest",
+  "look_tip": "Look for it walking on the leafy forest floor.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Vireo olivaceus",
+  "common": "Red-eyed Vireo",
+  "text": "That’s a Red-eyed Vireo. Look high in the leafy canopy; it is far easier to hear than to see.",
+  "badge": "Trail Tracker",
+  "habitat": "deciduous forest canopy",
+  "look_tip": "Look high in the leafy canopy; it is far easier to hear than to see.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Dumetella carolinensis",
+  "common": "Gray Catbird",
+  "text": "That’s a Gray Catbird. Look low in thick shrubs and tangles.",
+  "badge": "Trail Tracker",
+  "habitat": "dense thickets, shrubby edges and gardens",
+  "look_tip": "Look low in thick shrubs and tangles.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Mimus polyglottos",
+  "common": "Northern Mockingbird",
+  "text": "That’s a Northern Mockingbird. Look on rooftops, wires and shrub tops.",
+  "badge": "Trail Tracker",
+  "habitat": "open suburbs, parks and shrubby fields",
+  "look_tip": "Look on rooftops, wires and shrub tops.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Passer domesticus",
+  "common": "House Sparrow",
+  "text": "That’s a House Sparrow. Look around buildings, hedges and feeders.",
+  "badge": "Trail Tracker",
+  "habitat": "cities, towns and farms",
+  "look_tip": "Look around buildings, hedges and feeders.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Sturnus vulgaris",
+  "common": "European Starling",
+  "text": "That’s a European Starling. Look on lawns, wires and rooftops.",
+  "badge": "Trail Tracker",
+  "habitat": "cities, suburbs, farms and open ground",
+  "look_tip": "Look on lawns, wires and rooftops.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Strix varia",
+  "common": "Barred Owl",
+  "text": "That’s a Barred Owl. Look at dusk for a large round-headed owl on a big branch near the trunk.",
+  "badge": "Trail Tracker",
+  "habitat": "mature wet woods and swampy forest",
+  "look_tip": "Look at dusk for a large round-headed owl on a big branch near the trunk.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Bubo virginianus",
+  "common": "Great Horned Owl",
+  "text": "That’s a Great Horned Owl. Look for a large owl with ear tufts, perched against a trunk at dusk.",
+  "badge": "Trail Tracker",
+  "habitat": "woodlands, farmland, deserts and city parks",
+  "look_tip": "Look for a large owl with ear tufts, perched against a trunk at dusk.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Colaptes auratus",
+  "common": "Northern Flicker",
+  "text": "That’s a Northern Flicker. Look on the ground in lawns, or clinging to trunks.",
+  "badge": "Trail Tracker",
+  "habitat": "open woods, edges, lawns and parks",
+  "look_tip": "Look on the ground in lawns, or clinging to trunks.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Spinus tristis",
+  "common": "American Goldfinch",
+  "text": "That’s an American Goldfinch. Look on the seed heads of thistles and other weeds.",
+  "badge": "Trail Tracker",
+  "habitat": "weedy fields, roadsides and gardens",
+  "look_tip": "Look on the seed heads of thistles and other weeds.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Sialia sialis",
+  "common": "Eastern Bluebird",
+  "text": "That’s an Eastern Bluebird. Look on fence posts, wires and low branches over open ground.",
+  "badge": "Trail Tracker",
+  "habitat": "open country with scattered trees, farms and orchards",
+  "look_tip": "Look on fence posts, wires and low branches over open ground.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Contopus virens",
+  "common": "Eastern Wood-Pewee",
+  "text": "That’s an Eastern Wood-Pewee. Look on a bare mid-level branch, from where it darts out after insects.",
+  "badge": "Trail Tracker",
+  "habitat": "mature deciduous and mixed woods",
+  "look_tip": "Look on a bare mid-level branch, from where it darts out after insects.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Spizella passerina",
+  "common": "Chipping Sparrow",
+  "text": "That’s a Chipping Sparrow. Look on short grass and low conifer branches.",
+  "badge": "Trail Tracker",
+  "habitat": "lawns, parks, open woods and conifer edges",
+  "look_tip": "Look on short grass and low conifer branches.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Melanerpes carolinus",
+  "common": "Red-bellied Woodpecker",
+  "text": "That’s a Red-bellied Woodpecker. Look on trunks and large limbs.",
+  "badge": "Trail Tracker",
+  "habitat": "mature woods, suburbs and parks",
+  "look_tip": "Look on trunks and large limbs.",
+  "fun_fact": ""
+ },
+ {
+  "scientific": "Nopeus birdus",
+  "common": "Made-up Warbler",
+  "text": "That’s a Made-up Warbler.",
+  "badge": "Trail Tracker",
+  "habitat": "",
+  "look_tip": "",
+  "fun_fact": ""
+ }
+]

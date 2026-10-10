@@ -1,0 +1,9 @@
+LiteRT.js (@litertjs/core) 2.5.3, Apache License 2.0, Copyright Google LLC.
+Source: https://github.com/google-ai-edge/LiteRT (litert/js/packages/core)
+Files here: litert.iife.js (a minified browser bundle of @litertjs/core and @litertjs/wasm-utils built with esbuild) and the
+litert_wasm_*internal.{js,wasm} WebAssembly builds copied unchanged from the package's wasm/ folder.
+
+Rebuild the bundle:
+  npm i @litertjs/core@2.5.3 esbuild
+  echo "export * from '@litertjs/core';" > entry.mjs
+  npx esbuild entry.mjs --bundle --format=iife --global-name=LiteRT --minify --platform=browser --outfile=litert.iife.js

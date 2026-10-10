@@ -8,6 +8,13 @@ Forest Echo does not get you out of the house. It's for the walk you were alread
 
 When something catches your attention, hold one button for a few seconds. Forest Echo identifies the acoustic observation, generates one short naturalist explanation, speaks it through your headphones, and then returns to silence.
 
+## Try it
+
+- **Live demo:** [forest-echo.onrender.com](https://forest-echo.onrender.com/). The hosted server runs in explicit demo mode (results are labelled `demo`), and the free plan can take up to a minute to wake on the first visit. On-device mode runs the real BirdNET model in your browser from this URL.
+- **Demo video:** [demo.mp4](https://github.com/electrum21/hacktoberfest-forest-echo/blob/main/demo.mp4)
+
+To test identification, play a clear recording of one bird close to the phone and hold the button for 4–5 seconds. If **Use my location** is on, only birds plausible where you are this week are accepted, so a bird from another continent is ignored. Turn location off to identify any bird in BirdNET's list of about 6,000 species.
+
 ## Product loop
 
 ```text
@@ -126,7 +133,7 @@ Forest Echo is tuned for the **United States** first. BirdNET's training data an
 
 - It identifies **birds only**. Frogs, insects and mammals are not recognised, so a night walk in warm regions will often return silence.
 - The demo species (American Robin, Northern Cardinal, Blue Jay) are common US birds and are always labelled `source=demo`.
-- Use `CLASSIFIER=birdnet` with **Use my location** for the real thing; the location filter is the main accuracy gain.
+- Use `CLASSIFIER=birdnet` with **Use my location** for the real thing; the location filter is the main accuracy gain. The same filter also means a bird that doesn't occur where you are is ignored, so turn location off when testing with a recording from elsewhere.
 - Phones only allow the microphone and location over HTTPS (or `localhost`). To use the full local pipeline on a trail, reach your laptop through an HTTPS tunnel, and expect a failed hold wherever there is no mobile signal.
 
 ## Look and feel
@@ -253,6 +260,10 @@ Forest Echo's design goal is to make the AI interaction intentionally small: **n
 - **Mastra** orchestrates the observation-to-field-note flow as a typed workflow with a verification step, one retry and a safe fallback.
 - **ElevenLabs** renders the short field note as spoken audio, then playback ends.
 - **Render** hosts the public FastAPI/PWA surface, reproducibly deployed from `render.yaml`.
+
+## Lessons learned
+
+A personal write-up of what building this taught me is in **[docs/LESSONS_LEARNED.md](docs/LESSONS_LEARNED.md)**.
 
 ## Credits and licences
 
